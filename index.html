@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Shorts</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="logo">AI Shorts</span>
+      <div class="nav-links">
+        <a href="#feed">Browse</a>
+        <a href="#about">About</a>
+        <a href="tos.html">Terms</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Short-form AI content, curated daily</h1>
+      <p>Discover, watch, and share the best AI-generated short videos.</p>
+      <div class="search-bar">
+        <!-- TODO: wire up search to a real API endpoint -->
+        <input id="search-input" type="text" placeholder="Search shorts…" />
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="search-results" class="search-results hidden"></div>
+    </section>
+
+    <section id="feed" class="feed">
+      <h2>Trending Now</h2>
+      <div id="shorts-grid" class="shorts-grid">
+        <!-- TODO: replace with server-rendered or dynamically fetched shorts -->
+        <p class="loading">Loading shorts…</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>What is AI Shorts?</h2>
+      <p>
+        AI Shorts is a platform for sharing and discovering short-form videos
+        created with generative AI tools. All content is subject to our
+        <a href="tos.html">Terms of Service</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 AI Shorts &mdash; <a href="tos.html">Terms of Service</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
