@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset='utf-8'><title>TikTok Auth</title>
+<style>body{font-family:system-ui;max-width:640px;margin:60px auto;padding:0 20px;text-align:center}code{display:block;background:#f4f4f4;padding:16px;border-radius:8px;font-size:1.1em;word-break:break-all;margin:20px 0}button{padding:10px 24px;font-size:1em;cursor:pointer}</style></head><body>
+<h1>Authorization complete</h1>
+<p>Copy this code and paste it into the pipeline terminal:</p>
+<code id='c'>(no code in URL)</code>
+<button onclick="navigator.clipboard.writeText(document.getElementById('c').textContent)">Copy code</button>
+<script>const p=new URLSearchParams(location.search);const v=p.get('code');if(v)document.getElementById('c').textContent=v;</script>
+</body></html>
